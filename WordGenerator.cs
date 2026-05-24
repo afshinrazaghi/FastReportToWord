@@ -162,7 +162,7 @@ namespace FastReportToWord
                     }
                     else if (obj is PictureObject pictureObj)
                     {
-                        paragraph.Append(new Run(PictureDrawer.GetRun(doc, page, pictureObj)));
+                        paragraph.Append(PictureDrawer.GetRun(doc, page, pictureObj));
                     }
                     else if (obj is LineObject lineObj)
                     {
